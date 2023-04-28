@@ -1,5 +1,5 @@
-import SectionPane from "../components/SectionPane";
-import { IconBrandLinkedin, IconBrandGithub, IconBrandInstagram } from "@tabler/icons-react";
+import SectionPane from "@/components/SectionPane";
+import Links from "@/components/Links";
 
 export default function Home() {
   return (
@@ -31,11 +31,7 @@ export default function Home() {
             href="/blog"
           />
         </div>
-        <div className="flex flex-row justify-between w-40">
-          <a href="https://www.linkedin.com/in/ayush-manoj/"><IconBrandLinkedin /></a>
-          <a href="https://github.com/jonamhsuya"><IconBrandGithub /></a>
-          <a href="https://www.instagram.com/ayushsmanoj/"><IconBrandInstagram /></a>
-        </div>
+        <Links />
       </main>
     </>
   );
