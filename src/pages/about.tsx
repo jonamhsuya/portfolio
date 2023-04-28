@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IconHome, IconTie, IconBrandGithub, IconMessageDots } from "@tabler/icons-react";
+import { IconHome, IconTie, IconSettingsCog, IconMessageDots } from "@tabler/icons-react";
 
-const route = "/../public/profile.png";
+const route = "/images/profile.png";
 const caption = "Taking in Austin's skyline on the Congress Avenue Bridge.";
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
         <IconTie className="absolute top-8 left-24" size={36} />
       </Link>
       <Link href="/projects">
-        <IconBrandGithub className="absolute top-8 left-40" size={36} />
+        <IconSettingsCog className="absolute top-8 left-40" size={36} />
       </Link>
       <Link href="/blog">
         <IconMessageDots className="absolute top-8 left-56" size={36} />
