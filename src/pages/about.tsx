@@ -23,7 +23,7 @@ export default function About() {
             <p className="text-center text-xs mt-4">{caption}</p>
           </div>
           <div className="max-w-4xl">
-            <h1 className="text-6xl text-center md:text-left font-bold mb-6">
+            <h1 className="text-6xl text-left font-bold mb-6">
               About Me
             </h1>
             <p>

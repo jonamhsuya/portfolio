@@ -11,13 +11,13 @@ export default function SectionPane(props: Props) {
     <>
       <a
         href={props.href}
-        className="group rounded-2xl border-2 p-8 transition-colors hover:border-gray-300 hover:shadow"
+        className="group rounded-2xl border-2 p-8 transition-transform duration-200 hover:border-gray-300 hover:shadow hover:scale-105"
         target="_self"
         rel="noopener noreferrer"
       >
         <h2 className="mb-3 text-2xl font-semibold">
           {props.title}&nbsp;
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
             &rarr;
           </span>
         </h2>
