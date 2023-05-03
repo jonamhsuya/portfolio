@@ -8,6 +8,7 @@ const caption = "Taking in Austin's skyline on the Congress Avenue Bridge.";
 export default function About() {
   return (
     <>
+    <title>About Me | Ayush Manoj</title>
       <NavigationBar page="about" />
       <main className="min-h-[90vh] flex flex-col items-center justify-evenly p-8">
         <div className="flex xl:flex-row flex-col items-center justify-evenly min-w-full">

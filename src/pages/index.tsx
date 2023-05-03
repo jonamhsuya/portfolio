@@ -4,6 +4,7 @@ import Links from "@/components/Links";
 export default function Home() {
   return (
     <>
+      <title>Home | Ayush Manoj</title>
       <main className="flex min-h-screen flex-col items-center justify-evenly lg:p-24 md:p-16 sm:p-8">
         <div className="m-8">
           <p className="text-3xl">Hey! I&apos;m</p>
