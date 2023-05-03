@@ -2,7 +2,7 @@ import Link from "next/link";
 import {
   IconHome,
   IconTie,
-  IconSettingsCog,
+  IconHammer,
   IconMessageDots,
   IconInfoCircle,
 } from "@tabler/icons-react";
@@ -33,7 +33,7 @@ export default function NavigationBar(props: Props) {
       {/* {props.page !== "projects" && */}
       <Link className="group grid grid-flow-col items-center gap-3" href="/projects">
         <p className="font-bold text-2xl transition-colors group-hover:text-gray-500">Projects</p>
-        <IconSettingsCog className="transition-colors duration-200 group-hover:text-gray-500" size={36} />
+        <IconHammer className="transition-colors duration-200 group-hover:text-gray-500" size={36} />
       </Link>
       {/* } */}
       {/* {props.page !== "blog" && */}
