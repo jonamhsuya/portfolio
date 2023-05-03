@@ -2,13 +2,13 @@ import Image from "next/image";
 import Links from "@/components/Links";
 import NavigationBar from "@/components/NavigationBar";
 
-const route = "/images/profile.png";
+const imageSource = "/images/profile.png";
 const caption = "Taking in Austin's skyline on the Congress Avenue Bridge.";
 
 export default function About() {
   return (
     <>
-    <title>About Me | Ayush Manoj</title>
+      <title>About Me | Ayush Manoj</title>
       <NavigationBar page="about" />
       <main className="min-h-[90vh] flex flex-col items-center justify-evenly p-8">
         <div className="flex xl:flex-row flex-col items-center justify-evenly min-w-full">
@@ -17,16 +17,14 @@ export default function About() {
               <Image
                 className="rounded-lg"
                 alt={caption}
-                src={route}
+                src={imageSource}
                 fill={true}
               />
             </div>
             <p className="text-center text-xs mt-4">{caption}</p>
           </div>
-          <div className="max-w-4xl">
-            <h1 className="text-6xl text-left font-bold mb-6">
-              About Me
-            </h1>
+          <div className="max-w-4xl ml-8 mr-8">
+            <h1 className="text-6xl text-left font-bold mb-6">About Me</h1>
             <p>
               I&apos;m an incoming junior at the University of Texas at Austin.
             </p>
