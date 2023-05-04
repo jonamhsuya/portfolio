@@ -8,32 +8,36 @@ export default function Projects() {
       <title>Projects | Ayush Manoj</title>
       <NavigationBar page="projects" />
       <main className="flex min-h-[90vh] flex-col items-center justify-center">
-        <h1 className="text-6xl text-center font-bold mt-20 mb-10">Projects</h1>
+        <h1 className="text-6xl text-center font-bold mt-32 mb-16">Projects</h1>
         <ProjectPane
           title="Greenthumb"
-          description="A web application that allows people in an area to find community gardens and interact with other like-minded people."
-          href="/projects/greenthumb"
+          description="A forum connecting gardeners with community gardens."
+          technologies="Next.js · TypeScript · Tailwind CSS · tRPC · Prisma · NextAuth.js"
+          href="https://github.com/Naman-Arora/greenthumb"
           imageSource="/images/greenthumb.png"
           imageCaption=""
         />
         <ProjectPane
           title="When"
           description="A productivity-focused app, streamlining the process of planning your day."
-          href="/projects/when"
+          technologies="React Native · Expo"
+          href="https://github.com/jonamhsuya/when"
           imageSource="/images/when.png"
           imageCaption=""
         />
         <ProjectPane
           title="Dhaba"
-          description="A mobile app that tracks your favorite food trucks in real-time."
-          href="/projects/dhaba"
+          description="An app that tracks your favorite food trucks in real-time."
+          technologies="React Native · Expo · Node.js · MongoDB"
+          href="https://github.com/Naman-Arora/dhaba"
           imageSource="/images/dhaba.png"
           imageCaption=""
         />
         <ProjectPane
           title="Analysis: Which Nation Was The Best Colonizer?"
-          description="A brief analysis of the impact of colonialism on post-independence economic growth."
-          href="/projects/colonialism"
+          description="A brief analysis of the impact of colonialism on former colonies' post-independence economic growth."
+          technologies="Jupyter Notebook · Pandas · Matplotlib"
+          href="https://medium.com/@ayushmanoj04/analysis-which-colonial-power-left-behind-the-best-legacy-11de7d5c7119"
           imageSource="/images/colonialism.png"
           imageCaption=""
         />
