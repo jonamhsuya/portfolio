@@ -18,7 +18,7 @@ export default function ProjectPane(props: Props) {
       <div className="flex w-96 h-64 items-center bg-gray-300 relative">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <Image
-          className="object-scale-down"
+          className="object-contain"
           alt={props.imageCaption}
           src={props.imageSource}
           fill
