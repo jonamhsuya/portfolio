@@ -9,10 +9,10 @@ export default function About() {
   return (
     <>
       <title>About Me | Ayush Manoj</title>
-      <NavigationBar page="about" />
-      <main className="min-h-[90vh] flex flex-col items-center justify-evenly p-8">
+      <NavigationBar />
+      <main className="flex flex-col items-center justify-evenly min-h-screen w-[80vw] ml-[20vw] p-8 dark:bg-neutral-900 dark:text-white">
         <div className="flex xl:flex-row flex-col items-center justify-evenly min-w-full">
-          <div className="w-80 p-10 border border-gray-300 shadow-md rounded-lg -rotate-12 m-12">
+          <div className="w-80 p-10 border dark:shadow-none shadow-md rounded-md -rotate-12 m-12 bg-white">
             <div className="w-60 h-60 border rounded-lg relative">
               <Image
                 className="rounded-lg"
@@ -21,7 +21,7 @@ export default function About() {
                 fill={true}
               />
             </div>
-            <p className="text-center text-xs mt-4">{caption}</p>
+            <p className="text-center text-xs dark:text-black mt-4">{caption}</p>
           </div>
           <div className="max-w-4xl ml-8 mr-8">
             <h1 className="text-6xl text-left font-bold mb-6">About Me</h1>
@@ -38,7 +38,6 @@ export default function About() {
             </p>
           </div>
         </div>
-        <Links />
       </main>
     </>
   );

@@ -1,47 +1,79 @@
 import Link from "next/link";
 import {
   IconHome,
-  IconTie,
-  IconHammer,
-  IconMessageDots,
   IconInfoCircle,
+  IconTools,
+  IconTie,
+  IconCode,
 } from "@tabler/icons-react";
+import Links from "./Links";
 
-type Props = {
-    page: string;
-  };
-
-export default function NavigationBar(props: Props) {
+export default function NavigationBar() {
   return (
-    <div className="flex lg:flex-row flex-col items-center justify-evenly mt-8">
-      <Link className="group grid grid-flow-col items-center gap-3 lg:mb-0 mb-4" href="/">
-      <p className="font-bold text-2xl transition-colors group-hover:text-gray-500">Home</p>
-        <IconHome className="transition-colors duration-200 group-hover:text-gray-500" size={36} />
-      </Link>
-      {/* {props.page !== "about" && */}
-      <Link className="group grid grid-flow-col items-center gap-3 lg:mb-0 mb-4" href="/about">
-        <p className="font-bold text-2xl transition-colors group-hover:text-gray-500">About Me</p>
-        <IconInfoCircle className="transition-colors duration-200 group-hover:text-gray-500" size={36} />
-      </Link>
-      {/* } */}
-      {/* {props.page !== "experience" && */}
-      <Link className="group grid grid-flow-col items-center gap-3 lg:mb-0 mb-4" href="/experience">
-        <p className="font-bold text-2xl transition-colors group-hover:text-gray-500">Experience</p>
-        <IconTie className="transition-colors duration-200 group-hover:text-gray-500" size={36} />
-      </Link>
-      {/* } */}
-      {/* {props.page !== "projects" && */}
-      <Link className="group grid grid-flow-col items-center gap-3 lg:mb-0 mb-4" href="/projects">
-        <p className="font-bold text-2xl transition-colors group-hover:text-gray-500">Projects</p>
-        <IconHammer className="transition-colors duration-200 group-hover:text-gray-500" size={36} />
-      </Link>
-      {/* } */}
-      {/* {props.page !== "blog" && */}
-      <Link className="group grid grid-flow-col items-center gap-3" href="/blog">
-        <p className="font-bold text-2xl transition-colors group-hover:text-gray-500">Blog</p>
-        <IconMessageDots className="transition-colors duration-200 group-hover:text-gray-500" size={36} />
-      </Link>
-      {/* } */}
+    <div className="flex flex-col justify-between min-w-[20vw] p-8 min-h-screen fixed bg-gray-100 dark:bg-black">
+      <div>
+        <Link
+          className="group flex items-center gap-4 mb-6 dark:text-white"
+          href="/"
+        >
+          <IconHome
+            className="transition-colors duration-200 group-hover:text-gray-500"
+            size={24}
+          />
+          <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
+            Home
+          </p>
+        </Link>
+        <Link
+          className="group flex items-center gap-4 mb-6 dark:text-white"
+          href="/about"
+        >
+          <IconInfoCircle
+            className="transition-colors duration-200 group-hover:text-gray-500"
+            size={24}
+          />
+          <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
+            About Me
+          </p>
+        </Link>
+        <Link
+          className="group flex items-center gap-4 mb-6 dark:text-white"
+          href="/skills"
+        >
+          <IconTools
+            className="transition-colors duration-200 group-hover:text-gray-500"
+            size={24}
+          />
+          <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
+            Skills
+          </p>
+        </Link>
+        <Link
+          className="group flex items-center gap-4 mb-6 dark:text-white"
+          href="/experience"
+        >
+          <IconTie
+            className="transition-colors duration-200 group-hover:text-gray-500"
+            size={24}
+          />
+          <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
+            Experience
+          </p>
+        </Link>
+        <Link
+          className="group flex items-center gap-4 dark:text-white"
+          href="/projects"
+        >
+          <IconCode
+            className="transition-colors duration-200 group-hover:text-gray-500"
+            size={24}
+          />
+          <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
+            Projects
+          </p>
+        </Link>
+      </div>
+      <Links />
     </div>
   );
 }

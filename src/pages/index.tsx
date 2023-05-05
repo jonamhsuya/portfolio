@@ -5,16 +5,28 @@ export default function Home() {
   return (
     <>
       <title>Home | Ayush Manoj</title>
-      <main className="flex min-h-screen flex-col items-center justify-evenly lg:p-24 md:p-16 sm:p-8">
-        <div className="m-8">
-          <p className="text-3xl">Hey! I&apos;m</p>
-          <p className="text-8xl font-bold">Ayush Manoj</p>
+      <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 md:p-16 sm:p-8 dark:bg-neutral-900 dark:text-white">
+        <div>
+          <p className="text-2xl text-center">Hey! I&apos;m</p>
+          <p className="font-bold text-8xl text-center">Ayush Manoj</p>
         </div>
-        <div className="grid text-center lg:mb-0 lg:grid-cols-4 gap-8 lg:text-left">
+        <div className="m-8 text-center">
+          <p className="font-bold text-2xl">CS &apos;25 @ UT Austin</p>
+          <p className="text-lg">
+            Currently interested in mobile and web development, data analysis,
+            and machine learning.
+          </p>
+        </div>
+        <div className="grid text-center lg:mb-0 lg:grid-cols-4 gap-8">
           <SectionPane
             title="About Me"
             description="My background, education, hobbies, and more."
             href="/about"
+          />
+          <SectionPane
+            title="Skills"
+            description="Languages, frameworks, tools, and libraries I'm experienced with."
+            href="/skills"
           />
           <SectionPane
             title="Experience"
@@ -25,11 +37,6 @@ export default function Home() {
             title="Projects"
             description="Cool stuff I've enjoyed tinkering with over the years."
             href="/projects"
-          />
-          <SectionPane
-            title="Blog"
-            description="Some of my thoughts."
-            href="/blog"
           />
         </div>
         <Links />

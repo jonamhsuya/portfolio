@@ -11,15 +11,15 @@ export default function SectionPane(props: Props) {
     <>
       <a
         href={props.href}
-        className="group rounded-2xl border shadow p-8 transition-transform duration-200 hover:scale-105"
+        className="group items-center rounded-2xl border shadow-lg dark:shadow-white p-8 transition-transform duration-200 hover:scale-105"
         target="_self"
         rel="noopener noreferrer"
       >
         <h2 className="mb-3 text-2xl font-semibold">
           {props.title}&nbsp;
-          <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
+          {/* <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
             &rarr;
-          </span>
+          </span> */}
         </h2>
         <p className="m-0 max-w-[30ch] text-sm opacity-50">
           {props.description}

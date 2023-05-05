@@ -6,8 +6,8 @@ export default function Projects() {
   return (
     <>
       <title>Projects | Ayush Manoj</title>
-      <NavigationBar page="projects" />
-      <main className="flex min-h-[90vh] flex-col items-center justify-center">
+      <NavigationBar />
+      <main className="flex flex-col items-center justify-evenly min-h-screen w-[79vw] ml-[20vw] dark:bg-neutral-900 dark:text-white">
         <h1 className="text-6xl text-center font-bold mt-32 mb-16">Projects</h1>
         <ProjectPane
           title="Greenthumb"
@@ -41,7 +41,10 @@ export default function Projects() {
           imageSource="/images/colonialism.png"
           imageCaption=""
         />
-        <Links />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </main>
     </>
   );

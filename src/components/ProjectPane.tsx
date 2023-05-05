@@ -14,11 +14,11 @@ export default function ProjectPane(props: Props) {
   return (
     // update for smaller screens
     <a
-      className="flex lg:flex-row flex-col items-center border rounded-xl shadow-lg transition-transform duration-200 hover:scale-105 m-4"
+      className="flex xl:flex-row flex-col items-center border rounded-xl dark:shadow-none shadow-lg transition-transform duration-200 hover:scale-105 m-4 bg-white text-black"
       href={props.href}
       target="_blank"
     >
-      <div className="flex w-96 h-64 items-center bg-gray-200 rounded-l-lg relative">
+      <div className="flex w-96 h-64 items-center bg-gray-200 xl:rounded-l-lg xl:rounded-tr-none rounded-t-xl relative">
         <Image
           className="object-contain"
           alt={props.imageCaption}
@@ -26,7 +26,7 @@ export default function ProjectPane(props: Props) {
           fill
         />
       </div>
-      <div className="flex flex-col items-center justify-center text-center p-8 lg:w-[32rem] w-[16rem] h-fit">
+      <div className="flex flex-col items-center justify-center text-center p-8 xl:w-[32rem] w-[16rem] h-fit">
         <p className="font-bold text-2xl mb-2">{props.title}</p>
         <p>{props.description}</p>
         <p className="text-sm italic mt-4">{props.technologies}</p>
