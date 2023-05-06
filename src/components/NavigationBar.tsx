@@ -16,7 +16,7 @@ export default function NavigationBar() {
   return (
     <>
       <button
-        className="block md:hidden p-3 m-8 rounded-full absolute transition-colors duration-200 hover:bg-gray-100"
+        className="block md:hidden p-3 m-8 rounded-full absolute transition-colors duration-200 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
         onClick={() => {
           let newState = !displayMenu;
           setDisplayMenu(newState);
@@ -25,9 +25,9 @@ export default function NavigationBar() {
         <IconMenu2 />
       </button>
       {displayMenu && (
-        <div className="block md:hidden absolute mx-12 my-20 z-10 border rounded-lg shadow-lg bg-white">
+        <div className="block md:hidden absolute mx-11 my-20 z-10 border rounded-lg shadow-lg bg-white">
           <Link
-            className="group flex items-center gap-4 p-4 border w-56 dark:text-white"
+            className="group flex items-center gap-4 p-4 border w-56 rounded-t-lg"
             href="/"
           >
             <IconHome
@@ -39,7 +39,7 @@ export default function NavigationBar() {
             </p>
           </Link>
           <Link
-            className="group flex items-center gap-4 p-4 border w-56 dark:text-white"
+            className="group flex items-center gap-4 p-4 border w-56"
             href="/about"
           >
             <IconInfoCircle
@@ -51,7 +51,7 @@ export default function NavigationBar() {
             </p>
           </Link>
           <Link
-            className="group flex items-center gap-4 p-4 border w-56 dark:text-white"
+            className="group flex items-center gap-4 p-4 border w-56"
             href="/skills"
           >
             <IconTools
@@ -63,7 +63,7 @@ export default function NavigationBar() {
             </p>
           </Link>
           <Link
-            className="group flex items-center gap-4 p-4 border w-56 dark:text-white"
+            className="group flex items-center gap-4 p-4 border w-56"
             href="/experience"
           >
             <IconTie
@@ -75,7 +75,7 @@ export default function NavigationBar() {
             </p>
           </Link>
           <Link
-            className="group flex items-center gap-4 p-4 border w-56 dark:text-white"
+            className="group flex items-center gap-4 p-4 border w-56 rounded-b-lg"
             href="/projects"
           >
             <IconCode
