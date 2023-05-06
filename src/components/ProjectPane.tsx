@@ -18,7 +18,7 @@ export default function ProjectPane(props: Props) {
       href={props.href}
       target="_blank"
     >
-      <div className="flex w-96 h-64 items-center bg-gray-200 xl:rounded-l-lg xl:rounded-tr-none rounded-t-xl relative">
+      <div className="flex xl:w-96 lg:w-[36rem] w-96 xl:h-64 lg:h-96 h-64 items-center bg-gray-200 xl:rounded-l-lg xl:rounded-tr-none rounded-t-xl relative">
         <Image
           className="object-contain"
           alt={props.imageCaption}
@@ -26,7 +26,7 @@ export default function ProjectPane(props: Props) {
           fill
         />
       </div>
-      <div className="flex flex-col items-center justify-center text-center p-8 xl:w-[32rem] w-[16rem] h-fit">
+      <div className="flex flex-col items-center justify-center text-center p-8 lg:w-[32rem] w-[24rem] h-fit">
         <p className="font-bold text-2xl mb-2">{props.title}</p>
         <p>{props.description}</p>
         <p className="text-sm italic mt-4">{props.technologies}</p>

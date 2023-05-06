@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <title>Home | Ayush Manoj</title>
-      <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 md:p-16 sm:p-8 dark:bg-neutral-900 dark:text-white">
+      <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 p-12 dark:bg-neutral-900 dark:text-white">
         <div>
           <p className="text-2xl text-center">Hey! I&apos;m</p>
           <p className="font-bold text-8xl text-center">Ayush Manoj</p>

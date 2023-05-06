@@ -7,7 +7,7 @@ export default function Projects() {
     <>
       <title>Projects | Ayush Manoj</title>
       <NavigationBar />
-      <main className="flex flex-col items-center justify-evenly min-h-screen w-[79vw] ml-[20vw] dark:bg-neutral-900 dark:text-white">
+      <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white">
         <h1 className="text-6xl text-center font-bold mt-32 mb-16">Projects</h1>
         <ProjectPane
           title="Greenthumb"
