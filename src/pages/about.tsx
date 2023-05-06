@@ -11,7 +11,7 @@ export default function About() {
       <title>About Me | Ayush Manoj</title>
       <NavigationBar />
       <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] p-8 dark:bg-neutral-900 dark:text-white">
-        <div className="w-80 p-10 border dark:shadow-none shadow-md rounded-md -rotate-12 bg-white">
+        <div className="w-80 p-10 border dark:shadow-none shadow-md rounded-md -rotate-[10deg] m-12 bg-white">
           <div className="w-60 h-60 border rounded-lg relative">
             <Image
               className="rounded-lg"
