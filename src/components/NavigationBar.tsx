@@ -7,6 +7,7 @@ import {
   IconCode,
   IconMenu2,
 } from "@tabler/icons-react";
+import NavigationMenu from "./NavigationMenu";
 import Links from "./Links";
 import { useState } from "react";
 
@@ -15,79 +16,7 @@ export default function NavigationBar() {
 
   return (
     <>
-      <button
-        className="block md:hidden p-3 m-8 rounded-full absolute transition-colors duration-200 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-        onClick={() => {
-          let newState = !displayMenu;
-          setDisplayMenu(newState);
-        }}
-      >
-        <IconMenu2 />
-      </button>
-      {displayMenu && (
-        <div className="block md:hidden absolute mx-11 my-20 z-10 border rounded-lg shadow-lg bg-white">
-          <Link
-            className="group flex items-center gap-4 p-4 border w-56 rounded-t-lg"
-            href="/"
-          >
-            <IconHome
-              className="transition-colors duration-200 group-hover:text-gray-500"
-              size={24}
-            />
-            <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
-              Home
-            </p>
-          </Link>
-          <Link
-            className="group flex items-center gap-4 p-4 border w-56"
-            href="/about"
-          >
-            <IconInfoCircle
-              className="transition-colors duration-200 group-hover:text-gray-500"
-              size={24}
-            />
-            <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
-              About Me
-            </p>
-          </Link>
-          <Link
-            className="group flex items-center gap-4 p-4 border w-56"
-            href="/skills"
-          >
-            <IconTools
-              className="transition-colors duration-200 group-hover:text-gray-500"
-              size={24}
-            />
-            <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
-              Skills
-            </p>
-          </Link>
-          <Link
-            className="group flex items-center gap-4 p-4 border w-56"
-            href="/experience"
-          >
-            <IconTie
-              className="transition-colors duration-200 group-hover:text-gray-500"
-              size={24}
-            />
-            <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
-              Experience
-            </p>
-          </Link>
-          <Link
-            className="group flex items-center gap-4 p-4 border w-56 rounded-b-lg"
-            href="/projects"
-          >
-            <IconCode
-              className="transition-colors duration-200 group-hover:text-gray-500"
-              size={24}
-            />
-            <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
-              Projects
-            </p>
-          </Link>
-        </div>
-      )}
+      <NavigationMenu />
       <div className="hidden md:flex flex-col justify-between min-w-[20rem] p-8 min-h-screen fixed bg-gray-100 dark:bg-black">
         <div>
           <Link

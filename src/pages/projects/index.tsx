@@ -15,7 +15,6 @@ export default function Projects() {
           technologies="Next.js · TypeScript · Tailwind CSS · tRPC · Prisma · NextAuth.js"
           href="https://github.com/Naman-Arora/greenthumb"
           imageSource="/images/greenthumb.png"
-          imageCaption=""
         />
         <ProjectPane
           title="When"
@@ -23,7 +22,6 @@ export default function Projects() {
           technologies="React Native · Expo"
           href="https://github.com/jonamhsuya/when"
           imageSource="/images/when.png"
-          imageCaption=""
         />
         <ProjectPane
           title="Dhaba"
@@ -31,7 +29,6 @@ export default function Projects() {
           technologies="React Native · Expo · Node.js · MongoDB"
           href="https://github.com/Naman-Arora/dhaba"
           imageSource="/images/dhaba.png"
-          imageCaption=""
         />
         <ProjectPane
           title="Analysis: Which Nation Was The Best Colonizer?"
@@ -39,7 +36,6 @@ export default function Projects() {
           technologies="Jupyter Notebook · Pandas · Matplotlib"
           href="https://medium.com/@ayushmanoj04/analysis-which-colonial-power-left-behind-the-best-legacy-11de7d5c7119"
           imageSource="/images/colonialism.png"
-          imageCaption=""
         />
         <br></br>
         <br></br>
