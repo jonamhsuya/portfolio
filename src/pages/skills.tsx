@@ -68,7 +68,7 @@ export default function Skills() {
             />
             <SkillPane
               name="Next.js"
-              imageSource="/images/skills/nextjs.png"
+              imageSource="/images/skills/next.png"
               link="https://nextjs.org/"
             />
             <SkillPane
