@@ -14,28 +14,28 @@ export default function Projects() {
           description="A forum connecting gardeners with community gardens."
           technologies="Next.js · TypeScript · Tailwind CSS · tRPC · Prisma · NextAuth.js"
           href="https://github.com/Naman-Arora/greenthumb"
-          imageSource="/images/greenthumb.png"
+          imageSource="/images/projects/greenthumb.png"
         />
         <ProjectPane
           title="When"
           description="A productivity-focused app, streamlining the process of planning your day."
           technologies="React Native · Expo"
           href="https://github.com/jonamhsuya/when"
-          imageSource="/images/when.png"
+          imageSource="/images/projects/when.png"
         />
         <ProjectPane
           title="Dhaba"
           description="An app that tracks your favorite food trucks in real-time."
           technologies="React Native · Expo · Node.js · MongoDB"
           href="https://github.com/Naman-Arora/dhaba"
-          imageSource="/images/dhaba.png"
+          imageSource="/images/projects/dhaba.png"
         />
         <ProjectPane
           title="Analysis: Which Nation Was The Best Colonizer?"
           description="A brief analysis of the impact of colonialism on former colonies' post-independence economic growth."
           technologies="Jupyter Notebook · Pandas · Matplotlib"
           href="https://medium.com/@ayushmanoj04/analysis-which-colonial-power-left-behind-the-best-legacy-11de7d5c7119"
-          imageSource="/images/colonialism.png"
+          imageSource="/images/projects/colonialism.png"
         />
         <br></br>
         <br></br>

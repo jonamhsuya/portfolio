@@ -12,8 +12,6 @@ import Links from "./Links";
 import { useState } from "react";
 
 export default function NavigationBar() {
-  const [displayMenu, setDisplayMenu] = useState(false);
-
   return (
     <>
       <NavigationMenu />
