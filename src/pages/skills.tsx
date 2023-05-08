@@ -6,11 +6,11 @@ export default function Skills() {
     <>
       <title>Skills | Ayush Manoj</title>
       <NavigationBar />
-      <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white">
-        <h1 className="text-6xl text-center font-bold mb-8">Skills</h1>
-        <div>
-          <h2 className="text-2xl text-center font-bold mb-6">Languages</h2>
-          <div className="flex items-center justify-around gap-4">
+      <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white px-4 py-8">
+        <h1 className="text-6xl text-center font-bold m-16">Skills</h1>
+        <div className="m-12">
+          <h2 className="text-2xl text-center font-bold underline mb-6">Languages</h2>
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="Python"
               imageSource="/images/skills/python.png"
@@ -53,9 +53,9 @@ export default function Skills() {
             />
           </div>
         </div>
-        <div>
-          <h2 className="text-2xl text-center font-bold mb-6">Frameworks</h2>
-          <div className="flex items-center justify-around gap-4">
+        <div className="m-12">
+          <h2 className="text-2xl text-center font-bold underline mb-6">Frameworks</h2>
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="React.js"
               imageSource="/images/skills/react.png"
@@ -68,7 +68,7 @@ export default function Skills() {
             />
             <SkillPane
               name="Next.js"
-              imageSource="/images/skills/next.png"
+              imageSource="/images/skills/nextjs.png"
               link="https://nextjs.org/"
             />
             <SkillPane
@@ -93,9 +93,9 @@ export default function Skills() {
             />
           </div>
         </div>
-        <div>
-          <h2 className="text-2xl text-center font-bold mb-6">Databases</h2>
-          <div className="flex items-center justify-around gap-4">
+        <div className="m-12">
+          <h2 className="text-2xl text-center font-bold underline mb-6">Databases</h2>
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="PostgreSQL"
               imageSource="/images/skills/postgres.png"
@@ -123,9 +123,9 @@ export default function Skills() {
             />
           </div>
         </div>
-        <div>
-          <h2 className="text-2xl text-center font-bold mb-6">Libraries</h2>
-          <div className="flex items-center justify-around gap-4">
+        <div className="m-12">
+          <h2 className="text-2xl text-center font-bold underline mb-6">Libraries</h2>
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="NumPy"
               imageSource="/images/skills/numpy.png"
@@ -153,9 +153,9 @@ export default function Skills() {
             />
           </div>
         </div>
-        <div>
-          <h2 className="text-2xl text-center font-bold mb-6">Tools</h2>
-          <div className="flex items-center justify-around gap-4">
+        <div className="m-12">
+          <h2 className="text-2xl text-center font-bold underline mb-6">Tools</h2>
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="Expo"
               imageSource="/images/skills/expo.png"

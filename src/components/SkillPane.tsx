@@ -10,11 +10,11 @@ type Props = {
 export default function SkillPane(props: Props) {
   return (
     <a
-      className="flex flex-row items-center justify-around border-2 rounded-lg p-2 gap-2 mb-6 shadow-lg dark:shadow-none transition-transform duration-200 hover:scale-105 bg-neutral-100 dark:text-black"
+      className="flex flex-row items-center border-2 dark:border-neutral-400 rounded-lg px-4 py-2 gap-2 shadow-lg dark:shadow-md dark:shadow-white transition-transform duration-200 hover:scale-105 bg-neutral-100 dark:bg-neutral-500"
       href={props.link}
       target="_blank"
     >
-      <div className="w-8 h-8 relative">
+      <div className="w-6 h-6 relative">
         <Image
           className="object-contain"
           src={props.imageSource}
@@ -22,7 +22,7 @@ export default function SkillPane(props: Props) {
           fill
         />
       </div>
-      <p className="text-lg font-bold w-max">{props.name}</p>
+      <p className="text-lg w-max">{props.name}</p>
     </a>
   );
 }
