@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import SkillPane from "./SkillPane";
 
 type Props = {
   title: string;
   description: string;
-  technologies: string;
+  skills: Array<Array<string>>;
   href: string;
   imageSource: string;
 };
@@ -16,7 +17,7 @@ export default function ProjectPane(props: Props) {
       href={props.href}
       target="_blank"
     >
-      <div className="flex items-center xl:w-96 md:w-[50vw] w-[80vw] xl:h-64 h-[40vh] bg-gray-200 dark:bg-gray-700 xl:rounded-l-xl xl:rounded-tr-none rounded-t-xl relative">
+      <div className="flex items-center xl:w-96 md:w-[50vw] w-[80vw] xl:h-80 h-[40vh] bg-gray-200 dark:bg-gray-700 xl:rounded-l-xl xl:rounded-tr-none rounded-t-xl relative">
         <Image
           className="object-contain"
           alt={props.title}
@@ -27,7 +28,18 @@ export default function ProjectPane(props: Props) {
       <div className="flex flex-col items-center justify-center text-center p-8 xl:w-[40vw] md:w-[50vw] w-[80vw]">
         <h2 className="font-bold text-2xl mb-2">{props.title}</h2>
         <p>{props.description}</p>
-        <p className="text-sm italic mt-4">{props.technologies}</p>
+        <div className="flex flex-wrap items-center justify-center gap-3 my-6 xl:w-[30vw] md:w-[40vw] w-[70vw]">
+          {props.skills.map((item, index) => {
+            return (
+              <SkillPane
+                key={index}
+                name={item[0]}
+                imageSource={"/images/skills/" + item[1]}
+                small={true}
+              />
+            );
+          })}
+        </div>
       </div>
     </a>
   );

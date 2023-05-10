@@ -7,9 +7,9 @@ export default function Skills() {
       <title>Skills | Ayush Manoj</title>
       <NavigationBar />
       <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white px-4 py-8">
-        <h1 className="text-6xl text-center font-bold m-16">Skills</h1>
-        <div className="m-12">
-          <h2 className="text-2xl text-center font-bold underline mb-6">Languages</h2>
+        <h1 className="text-6xl text-center font-bold mt-16 mb-8">Skills</h1>
+        <div className="flex flex-col m-12 items-center">
+          <h2 className="text-2xl text-center font-bold mb-6">Languages</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="Python"
@@ -54,7 +54,7 @@ export default function Skills() {
           </div>
         </div>
         <div className="m-12">
-          <h2 className="text-2xl text-center font-bold underline mb-6">Frameworks</h2>
+          <h2 className="text-2xl text-center font-bold mb-6">Frameworks</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="React.js"
@@ -94,7 +94,7 @@ export default function Skills() {
           </div>
         </div>
         <div className="m-12">
-          <h2 className="text-2xl text-center font-bold underline mb-6">Databases</h2>
+          <h2 className="text-2xl text-center font-bold mb-6">Databases</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="PostgreSQL"
@@ -124,7 +124,7 @@ export default function Skills() {
           </div>
         </div>
         <div className="m-12">
-          <h2 className="text-2xl text-center font-bold underline mb-6">Libraries</h2>
+          <h2 className="text-2xl text-center font-bold mb-6">Libraries</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="NumPy"
@@ -154,7 +154,7 @@ export default function Skills() {
           </div>
         </div>
         <div className="m-12">
-          <h2 className="text-2xl text-center font-bold underline mb-6">Tools</h2>
+          <h2 className="text-2xl text-center font-bold mb-6">Tools</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
               name="Expo"

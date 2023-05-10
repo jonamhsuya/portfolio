@@ -12,28 +12,47 @@ export default function Projects() {
         <ProjectPane
           title="Greenthumb"
           description="A forum connecting gardeners with community gardens."
-          technologies="Next.js · TypeScript · Tailwind CSS · tRPC · Prisma · NextAuth.js"
+          skills={[
+            ["Next.js", "next.png"],
+            ["TypeScript", "typescript.png"],
+            ["Tailwind CSS", "tailwind.png"],
+            ["tRPC", "trpc.svg"],
+            ["Prisma", "prisma.png"],
+            ["NextAuth.js", "nextauth.png"],
+          ]}
           href="https://github.com/Naman-Arora/greenthumb"
           imageSource="/images/projects/greenthumb.png"
         />
         <ProjectPane
           title="When"
           description="A productivity-focused app, streamlining the process of planning your day."
-          technologies="React Native · Expo"
+          skills={[
+            ["React Native", "react.png"],
+            ["Expo", "expo.png"],
+          ]}
           href="https://github.com/jonamhsuya/when"
           imageSource="/images/projects/when.png"
         />
         <ProjectPane
           title="Dhaba"
           description="An app that tracks your favorite food trucks in real-time."
-          technologies="React Native · Expo · Node.js · MongoDB"
+          skills={[
+            ["React Native", "react.png"],
+            ["Expo", "expo.png"],
+            ["Node.js", "node.png"],
+            ["MongoDB", "mongodb.svg"],
+          ]}
           href="https://github.com/Naman-Arora/dhaba"
           imageSource="/images/projects/dhaba.png"
         />
         <ProjectPane
           title="Analysis: Which Nation Was The Best Colonizer?"
           description="A brief analysis of the impact of colonialism on former colonies' post-independence economic growth."
-          technologies="Jupyter Notebook · Pandas · Matplotlib"
+          skills={[
+            ["Jupyter Notebook", "jupyter.png"],
+            ["Pandas", "pandas.png"],
+            ["Matplotlib", "matplotlib.png"],
+          ]}
           href="https://medium.com/@ayushmanoj04/analysis-which-colonial-power-left-behind-the-best-legacy-11de7d5c7119"
           imageSource="/images/projects/colonialism.png"
         />
