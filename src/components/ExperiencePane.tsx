@@ -22,7 +22,7 @@ export default function ExperiencePane(props: Props) {
         <p className="text-right">{props.dates}</p>
       </div>
       {props.skills.length > 0 && (
-        <div className="flex flex-row items-center justify-start gap-3 my-6">
+        <div className="flex flex-wrap items-center justify-start gap-3 my-6">
           {props.skills.map((item, index) => {
             return (
               <SkillPane
