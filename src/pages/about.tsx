@@ -2,7 +2,7 @@ import Image from "next/image";
 import Links from "@/components/Links";
 import NavigationBar from "@/components/NavigationBar";
 
-const imageSource = "/images/about/profile.png";
+const imageSource = "/images/profile.png";
 const caption = "Taking in Austin's skyline on the Congress Avenue Bridge.";
 
 export default function About() {
