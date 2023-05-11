@@ -21,7 +21,7 @@ export default function ProjectPane(props: Props) {
         <Image
           className="object-contain"
           alt={props.title}
-          src={props.imageSource}
+          src={"/images/projects/" + props.imageSource}
           fill
         />
       </div>

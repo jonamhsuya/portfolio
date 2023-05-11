@@ -21,7 +21,7 @@ export default function Projects() {
             ["NextAuth.js", "nextauth.png"],
           ]}
           href="https://github.com/Naman-Arora/greenthumb"
-          imageSource="/images/projects/greenthumb.png"
+          imageSource="greenthumb.png"
         />
         <ProjectPane
           title="When"
@@ -31,7 +31,7 @@ export default function Projects() {
             ["Expo", "expo.png"],
           ]}
           href="https://github.com/jonamhsuya/when"
-          imageSource="/images/projects/when.png"
+          imageSource="when.png"
         />
         <ProjectPane
           title="Dhaba"
@@ -43,7 +43,7 @@ export default function Projects() {
             ["MongoDB", "mongodb.svg"],
           ]}
           href="https://github.com/Naman-Arora/dhaba"
-          imageSource="/images/projects/dhaba.png"
+          imageSource="dhaba.png"
         />
         <ProjectPane
           title="Analysis: Which Nation Was The Best Colonizer?"
@@ -54,7 +54,7 @@ export default function Projects() {
             ["Matplotlib", "matplotlib.png"],
           ]}
           href="https://medium.com/@ayushmanoj04/analysis-which-colonial-power-left-behind-the-best-legacy-11de7d5c7119"
-          imageSource="/images/projects/colonialism.png"
+          imageSource="colonialism.png"
         />
         <br></br>
         <br></br>
