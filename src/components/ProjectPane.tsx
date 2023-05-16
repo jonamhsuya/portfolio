@@ -13,7 +13,7 @@ type Props = {
 export default function ProjectPane(props: Props) {
   return (
     <a
-      className="flex xl:flex-row flex-col items-center border rounded-xl shadow-lg dark:shadow-white transition-transform duration-200 hover:scale-105 m-4 dark:bg-neutral-800 dark:text-white"
+      className="flex xl:flex-row flex-col items-center border rounded-xl shadow-lg dark:shadow-md dark:shadow-white transition-transform duration-200 hover:scale-105 m-4 dark:bg-neutral-800 dark:text-white"
       href={props.href}
       target="_blank"
     >

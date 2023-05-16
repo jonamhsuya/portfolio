@@ -27,7 +27,7 @@ export default function SkillPane(props: Props) {
           fill
         />
       </div>
-      <p className={props.small ? "text-sm w-max" : "text-md font-bold w-max"}>{props.name}</p>
+      <p className={props.small ? "text-sm w-max" : "text-md w-max"}>{props.name}</p>
     </a>
   );
 }
