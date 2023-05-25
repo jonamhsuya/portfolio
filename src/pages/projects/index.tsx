@@ -15,9 +15,9 @@ export default function Projects() {
           skills={[
             ["Next.js", "next.png"],
             ["TypeScript", "typescript.png"],
-            ["Tailwind CSS", "tailwind.png"],
             ["tRPC", "trpc.svg"],
             ["Prisma", "prisma.png"],
+            ["Tailwind CSS", "tailwind.png"],
             ["NextAuth.js", "nextauth.png"],
           ]}
           href="https://github.com/Naman-Arora/greenthumb"
