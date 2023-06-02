@@ -10,8 +10,8 @@ export default function Experience() {
         <h1 className="text-6xl text-center font-bold m-16">Experience</h1>
         <ExperiencePane
           company="Intelisent"
-          location="Newington, CT"
-          title="Software Developer Intern"
+          location="Richmond, VA"
+          title="Marketing Intern"
           dates="June 2023 – August 2023 (Incoming)"
           skills={[]}
           description={[]}
