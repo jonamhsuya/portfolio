@@ -42,6 +42,11 @@ export default function Skills() {
               link="https://developer.mozilla.org/en-US/docs/Web/CSS"
             />
             <SkillPane
+              name="C#"
+              imageSource="/images/skills/csharp.png"
+              link="https://learn.microsoft.com/en-us/dotnet/csharp"
+            />
+            <SkillPane
               name="SQL"
               imageSource="/images/skills/sql.png"
               link="https://en.wikipedia.org/wiki/SQL"
@@ -82,9 +87,9 @@ export default function Skills() {
               link="https://tailwindcss.com/"
             />
             <SkillPane
-              name="Flask"
-              imageSource="/images/skills/flask.png"
-              link="https://flask.palletsprojects.com/en/2.3.x/"
+              name="ASP.NET"
+              imageSource="/images/skills/aspnet.png"
+              link="https://dotnet.microsoft.com/en-us/apps/aspnet"
             />
             <SkillPane
               name="Rasa"
@@ -96,6 +101,11 @@ export default function Skills() {
         <div className="m-12">
           <h2 className="text-2xl text-center font-bold mb-6">Databases</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
+          <SkillPane
+              name="SQL Server"
+              imageSource="/images/skills/sqlserver.png"
+              link="https://www.postgresql.org/"
+            />
             <SkillPane
               name="PostgreSQL"
               imageSource="/images/skills/postgres.png"
@@ -165,16 +175,6 @@ export default function Skills() {
               name="Jupyter Notebook"
               imageSource="/images/skills/jupyter.png"
               link="https://jupyter.org/"
-            />
-            <SkillPane
-              name="tRPC"
-              imageSource="/images/skills/trpc.svg"
-              link="https://trpc.io/"
-            />
-            <SkillPane
-              name="NextAuth.js"
-              imageSource="/images/skills/nextauth.png"
-              link="https://next-auth.js.org/"
             />
           </div>
         </div>

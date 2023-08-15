@@ -10,6 +10,17 @@ export default function Projects() {
       <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white p-8">
         <h1 className="text-6xl text-center font-bold m-16">Projects</h1>
         <ProjectPane
+          title="Explorify"
+          description="A music recommendation app that uses your Spotify listening history to suggest new tracks."
+          skills={[
+            ["Next.js", "next.png"],
+            ["TypeScript", "typescript.png"],
+            ["Tailwind CSS", "tailwind.png"],
+          ]}
+          href="https://github.com/jonamhsuya/explorify"
+          imageSource="explorify.png"
+        />
+        <ProjectPane
           title="Greenthumb"
           description="A forum connecting gardeners with community gardens."
           skills={[
