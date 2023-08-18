@@ -9,6 +9,22 @@ export default function Experience() {
       <main className="flex flex-col items-center justify-around min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white p-8">
         <h1 className="text-6xl text-center font-bold m-16">Experience</h1>
         <ExperiencePane
+          company="Intelisent"
+          location="Richmond, VA"
+          title="Software Development Intern"
+          dates="June 2023 – August 2023"
+          skills={[
+            ["React.js", "react.png"],
+            ["ASP.NET", "aspnet.png"],
+            ["SQL Server", "sqlserver.png"],
+          ]}
+          description={[
+            "Developed a web-based knowledge base application to store data for 1,000+ security policy questions from clients",
+            "Utilized a React frontend and an ASP.NET Core Web API controller with an Azure-hosted SQL Server backend",
+            "Significantly reduced time required by developers to locate relevant policy documents for security questionnaires",
+          ]}
+        />
+        <ExperiencePane
           company="Texas Convergent"
           location="Austin, TX"
           title="Forge Engineer, QWELL"
@@ -23,22 +39,6 @@ export default function Experience() {
             "Building a mobile application for a nonprofit to connect Austin’s LGBTQ community with LGBTQ-affirming businesses",
             "Scraped data from 1,000+ Instagram accounts of businesses with Python, Jupyter Notebook, and Instaloader API",
             "Led development of React Native map screen to display nearby stores with Google Maps and Expo Location APIs",
-          ]}
-        />
-        <ExperiencePane
-          company="Intelisent"
-          location="Richmond, VA"
-          title="Software Development Intern"
-          dates="June 2023 – August 2023"
-          skills={[
-            ["React.js", "react.png"],
-            ["ASP.NET", "aspnet.png"],
-            ["SQL Server", "sqlserver.png"],
-          ]}
-          description={[
-            "Developed a web-based knowledge base application to store data for 1,000+ security policy questions from clients",
-            "Utilized a React frontend and an ASP.NET Core Web API controller with an Azure-hosted SQL Server backend",
-            "Significantly reduced time required by developers to locate relevant policy documents for security questionnaires",
           ]}
         />
         <ExperiencePane
