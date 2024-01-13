@@ -176,6 +176,11 @@ export default function Skills() {
               imageSource="/images/skills/jupyter.png"
               link="https://jupyter.org/"
             />
+            <SkillPane
+              name="Retool"
+              imageSource="/images/skills/retool.png"
+              link="https://retool.com/"
+            />
           </div>
         </div>
       </main>

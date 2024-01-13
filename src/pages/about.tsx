@@ -25,7 +25,7 @@ export default function About() {
           <div>
             <h2 className="text-lg font-bold mb-2">Who are you?</h2>
             <p>
-              I&apos;m an incoming junior at the University of Texas at Austin,
+              I&apos;m a junior at the University of Texas at Austin,
               studying computer science.
             </p>
           </div>

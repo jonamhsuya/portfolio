@@ -10,6 +10,17 @@ export default function Projects() {
       <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white p-8">
         <h1 className="text-6xl text-center font-bold m-16">Projects</h1>
         <ProjectPane
+          title="Quest"
+          description="An innovative AI-powered app gamifying new adventures."
+          skills={[
+            ["React Native", "react.png"],
+            ["Supabase", "supabase.png"],
+            ["GPT-3.5", "gpt.webp"],
+          ]}
+          href="https://devpost.com/software/quest-5m0kxj"
+          imageSource="quest.png"
+        />
+        <ProjectPane
           title="Explorify"
           description="A music recommendation app that uses your Spotify listening history to suggest new tracks."
           skills={[
@@ -31,7 +42,7 @@ export default function Projects() {
             ["Tailwind CSS", "tailwind.png"],
             ["NextAuth.js", "nextauth.png"],
           ]}
-          href="https://github.com/Naman-Arora/greenthumb"
+          href="https://devpost.com/software/greenthumb-cea1k2"
           imageSource="greenthumb.png"
         />
         <ProjectPane
@@ -53,7 +64,7 @@ export default function Projects() {
             ["Node.js", "node.png"],
             ["MongoDB", "mongodb.svg"],
           ]}
-          href="https://github.com/Naman-Arora/dhaba"
+          href="https://devpost.com/software/dhaba"
           imageSource="dhaba.png"
         />
         <ProjectPane

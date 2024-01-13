@@ -11,7 +11,7 @@ export default function Home() {
           <p className="font-bold text-8xl text-center">Ayush Manoj</p>
         </div>
         <div className="m-8 text-center">
-          <p className="font-bold text-2xl">CS &apos;25 @ UT Austin</p>
+          <p className="font-bold text-2xl">CS @ UT Austin</p>
           <p className="text-lg">
             Currently interested in mobile and web development, data analysis,
             and machine learning.

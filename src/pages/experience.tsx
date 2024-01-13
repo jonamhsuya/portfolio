@@ -9,19 +9,14 @@ export default function Experience() {
       <main className="flex flex-col items-center justify-around min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white p-8">
         <h1 className="text-6xl text-center font-bold m-16">Experience</h1>
         <ExperiencePane
-          company="Intelisent"
-          location="Richmond, VA"
-          title="Software Development Intern"
-          dates="June 2023 – August 2023"
-          skills={[
-            ["React.js", "react.png"],
-            ["ASP.NET", "aspnet.png"],
-            ["SQL Server", "sqlserver.png"],
-          ]}
+          company="SmartFiit"
+          location="Austin, TX"
+          title="React Native Developer"
+          dates="September 2023 – Present"
+          skills={[["React Native", "react.png"]]}
           description={[
-            "Developed a web-based knowledge base application to store data for 1,000+ security policy questions from clients",
-            "Utilized a React frontend and an ASP.NET Core Web API controller with an Azure-hosted SQL Server backend",
-            "Significantly reduced time required by developers to locate relevant policy documents for security questionnaires",
+            "Spurred UI enhancement efforts and critical bug resolutions by implementing suggestions from 50+ beta testers",
+            "Played a pivotal role in developing user authentication features, accelerating development timeline by several weeks",
           ]}
         />
         <ExperiencePane
@@ -42,14 +37,19 @@ export default function Experience() {
           ]}
         />
         <ExperiencePane
-          company="Mr. Jan's Math Class"
-          location="Sugar Land, TX"
-          title="Tutor"
-          dates="August 2021 – May 2022"
-          skills={[]}
+          company="Intelisent"
+          location="Richmond, VA"
+          title="Software Development Intern"
+          dates="June 2023 – August 2023"
+          skills={[
+            ["React.js", "react.png"],
+            ["ASP.NET", "aspnet.png"],
+            ["SQL Server", "sqlserver.png"],
+          ]}
           description={[
-            "Taught math and science concepts ranging from pre-algebra to college-level calculus and physics to 50+ students",
-            "Assisted students with homework and test preparation twice a week in small-group sessions of a few students each",
+            "Developed a web-based knowledge base application to store data for 1,000+ security policy questions from clients",
+            "Utilized a React frontend and an ASP.NET Core Web API controller with an Azure-hosted SQL Server backend",
+            "Significantly reduced time required by developers to locate relevant policy documents for security questionnaires",
           ]}
         />
         <ExperiencePane
