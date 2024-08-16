@@ -12,7 +12,7 @@ export default function Experience() {
           company="Visa"
           location="Austin, TX"
           title="Software Engineering Intern"
-          dates="April 2024 – August 2024"
+          dates="May 2024 – August 2024"
           skills={[
             ["Angular", "angular.png"],
             ["Spring Boot", "springboot.png"],
