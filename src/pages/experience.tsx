@@ -6,34 +6,33 @@ export default function Experience() {
     <>
       <title>Experience | Ayush Manoj</title>
       <NavigationBar />
-      <main className="flex flex-col items-center justify-around min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white p-8">
+      <main className="flex flex-col items-center justify-around min-h-screen md:ml-[20rem] p-8">
         <h1 className="text-6xl text-center font-bold m-16">Experience</h1>
+        <ExperiencePane
+          company="Visa"
+          location="Austin, TX"
+          title="Software Engineering Intern"
+          dates="April 2024 – August 2024"
+          skills={[
+            ["Angular", "angular.png"],
+            ["Spring Boot", "springboot.png"],
+            ["PostgreSQL", "postgres.png"],
+          ]}
+          description={[
+            "Built automated testing application with Angular, Spring Boot, and PostgreSQL, saving 100+ man-hours monthly",
+            "Enhanced testing by enabling payload file uploads, reusable test cases, concurrent execution, and result tracking",
+            "Integrated generative AI to automatically create test cases, optimizing workflows and accelerating testing processes",
+          ]}
+        />
         <ExperiencePane
           company="SmartFiit"
           location="Austin, TX"
-          title="React Native Developer"
-          dates="September 2023 – Present"
+          title="Software Engineer"
+          dates="September 2023 – December 2023"
           skills={[["React Native", "react.png"]]}
           description={[
             "Spurred UI enhancement efforts and critical bug resolutions by implementing suggestions from 50+ beta testers",
             "Played a pivotal role in developing user authentication features, accelerating development timeline by several weeks",
-          ]}
-        />
-        <ExperiencePane
-          company="Texas Convergent"
-          location="Austin, TX"
-          title="Forge Engineer, QWELL"
-          dates="January 2023 – Present"
-          skills={[
-            ["React Native", "react.png"],
-            ["Expo", "expo.png"],
-            ["Supabase", "supabase.png"],
-            ["PostgreSQL", "postgres.png"],
-          ]}
-          description={[
-            "Building a mobile application for a nonprofit to connect Austin’s LGBTQ community with LGBTQ-affirming businesses",
-            "Scraped data from 1,000+ Instagram accounts of businesses with Python, Jupyter Notebook, and Instaloader API",
-            "Led development of React Native map screen to display nearby stores with Google Maps and Expo Location APIs",
           ]}
         />
         <ExperiencePane
@@ -42,7 +41,7 @@ export default function Experience() {
           title="Software Development Intern"
           dates="June 2023 – August 2023"
           skills={[
-            ["React.js", "react.png"],
+            ["React", "react.png"],
             ["ASP.NET", "aspnet.png"],
             ["SQL Server", "sqlserver.png"],
           ]}
@@ -50,28 +49,6 @@ export default function Experience() {
             "Developed a web-based knowledge base application to store data for 1,000+ security policy questions from clients",
             "Utilized a React frontend and an ASP.NET Core Web API controller with an Azure-hosted SQL Server backend",
             "Significantly reduced time required by developers to locate relevant policy documents for security questionnaires",
-          ]}
-        />
-        <ExperiencePane
-          company="Morgan Stanley"
-          location="New York, NY"
-          title="JumpStart Scholar"
-          dates="November 2021 – April 2022"
-          skills={[]}
-          description={[
-            "Selected as one of 160 scholars out of 1,000+ initial applicants to study entrepreneurship and investment banking",
-            "Placed first in end-of-program case competition and featured on Morgan Stanley billboard in Times Square after selecting the best set of co-managers and passive bookrunners for Amazon’s $18.5bn investment-grade debt offering",
-          ]}
-        />
-        <ExperiencePane
-          company="Cisco"
-          location="Raleigh, NC"
-          title="Extern"
-          dates="June 2021 – July 2021"
-          skills={[]}
-          description={[
-            "Selected as one of 150 externs out of 650+ initial applicants after both an initial application and interview process",
-            "Designed an IoT-integrated mobile app for nursing homes, winning first place in end-of-program capstone project",
           ]}
         />
       </main>

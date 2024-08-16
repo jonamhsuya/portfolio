@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import SkillPane from "./SkillPane";
 
 type Props = {
@@ -13,11 +12,11 @@ type Props = {
 export default function ProjectPane(props: Props) {
   return (
     <a
-      className="flex xl:flex-row flex-col items-center border rounded-xl shadow-lg dark:shadow-md dark:shadow-white transition-transform duration-200 hover:scale-105 m-4 dark:bg-neutral-800 dark:text-white"
+      className="flex xl:flex-row flex-col items-center border rounded-xl shadow-lg transition-transform duration-200 hover:scale-105 m-4"
       href={props.href}
       target="_blank"
     >
-      <div className="flex items-center xl:w-96 md:w-[50vw] w-[80vw] xl:h-80 h-[40vh] bg-gray-200 dark:bg-gray-700 xl:rounded-l-xl xl:rounded-tr-none rounded-t-xl relative">
+      <div className="flex items-center xl:w-96 md:w-[50vw] w-[80vw] xl:h-80 h-[40vh] bg-gray-200 xl:rounded-l-xl xl:rounded-tr-none rounded-t-xl relative">
         <Image
           className="object-contain"
           alt={props.title}

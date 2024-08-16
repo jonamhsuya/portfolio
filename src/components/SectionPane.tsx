@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = {
   title: string;
   description: string;
@@ -11,7 +9,7 @@ export default function SectionPane(props: Props) {
     <>
       <a
         href={props.href}
-        className="group items-center rounded-2xl border shadow-lg dark:shadow-white p-8 transition-transform duration-200 hover:scale-105"
+        className="group items-center rounded-2xl border shadow-lg p-8 transition-transform duration-200 hover:scale-105"
         target="_self"
         rel="noopener noreferrer"
       >

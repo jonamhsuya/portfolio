@@ -1,13 +1,13 @@
 import {
-  IconMail,
-  IconBrandLinkedin,
   IconBrandGithub,
   IconBrandInstagram,
+  IconBrandLinkedin,
+  IconMail,
 } from "@tabler/icons-react";
 
 export default function Links() {
   return (
-    <div className="flex flex-col mx-auto my-12 dark:text-white">
+    <div className="flex flex-col mx-auto my-12">
       <div className="flex flex-row justify-between w-48 mb-4">
       <a
           className="transition-colors duration-200 hover:text-gray-500"
@@ -37,7 +37,7 @@ export default function Links() {
           <IconBrandInstagram />
         </a>
       </div>
-      <p className="mx-auto">© 2023 Ayush Manoj.</p>
+      <p className="mx-auto">© 2024 Ayush Manoj.</p>
     </div>
   );
 }

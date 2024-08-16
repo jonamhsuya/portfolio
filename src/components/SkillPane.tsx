@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 type Props = {
   name: string;
@@ -10,8 +9,8 @@ type Props = {
 
 export default function SkillPane(props: Props) {
   const style = props.small
-    ? "flex flex-row items-center border rounded-lg px-3 py-2 gap-2 shadow dark:shadow-white bg-neutral-100 dark:bg-neutral-800"
-    : "flex flex-row items-center border-2 rounded-lg px-4 py-2 gap-2 shadow-lg dark:shadow-md dark:shadow-white transition-transform duration-200 hover:scale-105 bg-neutral-100 dark:bg-neutral-800";
+    ? "flex flex-row items-center border border-gray-400 rounded-lg px-3 py-2 gap-2 bg-neutral-100"
+    : "flex flex-row items-center border border-gray-400 rounded-lg px-4 py-2 gap-2 transition-transform duration-200 hover:scale-105 bg-neutral-100";
 
   return (
     <a className={style} href={props.link} target="_blank">

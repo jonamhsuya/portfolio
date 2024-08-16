@@ -1,4 +1,3 @@
-import React from "react";
 import SkillPane from "./SkillPane";
 
 type Props = {
@@ -12,7 +11,7 @@ type Props = {
 
 export default function ExperiencePane(props: Props) {
   return (
-    <div className="lg:w-[60vw] md:w-[50vw] w-[90vw] h-min border rounded-md shadow-md dark:shadow-white p-8 my-4">
+    <div className="lg:w-[60vw] md:w-[50vw] w-[90vw] h-min border rounded-md shadow-md p-8 my-4">
       <div className="flex flex-row justify-between">
         <p className="text-xl text-left font-bold">{props.company}</p>
         <p className="text-xl text-right">{props.location}</p>

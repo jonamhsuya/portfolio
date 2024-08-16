@@ -6,7 +6,7 @@ export default function Skills() {
     <>
       <title>Skills | Ayush Manoj</title>
       <NavigationBar />
-      <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] dark:bg-neutral-900 dark:text-white px-4 py-8">
+      <main className="flex flex-col items-center justify-evenly min-h-screen md:ml-[20rem] px-4 py-8">
         <h1 className="text-6xl text-center font-bold mt-16 mb-8">Skills</h1>
         <div className="flex flex-col m-12 items-center">
           <h2 className="text-2xl text-center font-bold mb-6">Languages</h2>
@@ -62,7 +62,7 @@ export default function Skills() {
           <h2 className="text-2xl text-center font-bold mb-6">Frameworks</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <SkillPane
-              name="React.js"
+              name="React"
               imageSource="/images/skills/react.png"
               link="https://react.dev/"
             />
@@ -75,6 +75,11 @@ export default function Skills() {
               name="Next.js"
               imageSource="/images/skills/next.png"
               link="https://nextjs.org/"
+            />
+            <SkillPane
+              name="Angular"
+              imageSource="/images/skills/angular.png"
+              link="https://angular.dev/"
             />
             <SkillPane
               name="Node.js"
@@ -91,15 +96,10 @@ export default function Skills() {
               imageSource="/images/skills/aspnet.png"
               link="https://dotnet.microsoft.com/en-us/apps/aspnet"
             />
-            <SkillPane
-              name="Rasa"
-              imageSource="/images/skills/rasa.png"
-              link="https://rasa.com/"
-            />
           </div>
         </div>
         <div className="m-12">
-          <h2 className="text-2xl text-center font-bold mb-6">Databases</h2>
+          <h2 className="text-2xl text-center font-bold mb-6">Backend</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
           <SkillPane
               name="SQL Server"

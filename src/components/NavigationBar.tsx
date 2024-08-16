@@ -1,24 +1,22 @@
-import Link from "next/link";
 import {
+  IconCode,
   IconHome,
   IconInfoCircle,
-  IconTools,
   IconTie,
-  IconCode,
-  IconMenu2,
+  IconTools
 } from "@tabler/icons-react";
-import NavigationMenu from "./NavigationMenu";
+import Link from "next/link";
 import Links from "./Links";
-import { useState } from "react";
+import NavigationMenu from "./NavigationMenu";
 
 export default function NavigationBar() {
   return (
     <>
       <NavigationMenu />
-      <div className="hidden md:flex flex-col justify-between min-w-[20rem] p-8 min-h-screen fixed bg-gray-100 dark:bg-black">
+      <div className="hidden md:flex flex-col justify-between min-w-[20rem] p-8 min-h-screen fixed bg-gray-100">
         <div>
           <Link
-            className="group flex items-center gap-4 mb-6 dark:text-white"
+            className="group flex items-center gap-4 mb-6"
             href="/"
           >
             <IconHome
@@ -30,7 +28,7 @@ export default function NavigationBar() {
             </p>
           </Link>
           <Link
-            className="group flex items-center gap-4 mb-6 dark:text-white"
+            className="group flex items-center gap-4 mb-6"
             href="/about"
           >
             <IconInfoCircle
@@ -38,11 +36,11 @@ export default function NavigationBar() {
               size={24}
             />
             <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
-              About Me
+              About
             </p>
           </Link>
           <Link
-            className="group flex items-center gap-4 mb-6 dark:text-white"
+            className="group flex items-center gap-4 mb-6"
             href="/skills"
           >
             <IconTools
@@ -54,7 +52,7 @@ export default function NavigationBar() {
             </p>
           </Link>
           <Link
-            className="group flex items-center gap-4 mb-6 dark:text-white"
+            className="group flex items-center gap-4 mb-6"
             href="/experience"
           >
             <IconTie
@@ -66,7 +64,7 @@ export default function NavigationBar() {
             </p>
           </Link>
           <Link
-            className="group flex items-center gap-4 dark:text-white"
+            className="group flex items-center gap-4"
             href="/projects"
           >
             <IconCode

@@ -1,11 +1,11 @@
 import { Menu, Transition } from "@headlessui/react";
 import {
+  IconCode,
   IconHome,
   IconInfoCircle,
-  IconTools,
-  IconTie,
-  IconCode,
   IconMenu2,
+  IconTie,
+  IconTools,
 } from "@tabler/icons-react";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ export default function NavigationMenu() {
   return (
     <div className="block md:hidden absolute m-8 z-50">
       <Menu>
-        <div className="flex items-center justify-center rounded-full w-12 h-12 transition-colors duration-200 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+        <div className="flex items-center justify-center rounded-full w-12 h-12 transition-colors duration-200 hover:bg-gray-100">
           <Menu.Button>
             <IconMenu2 />
           </Menu.Button>
@@ -26,7 +26,7 @@ export default function NavigationMenu() {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <Menu.Items className={"w-60 border rounded-lg shadow-lg dark:shadow-none bg-white dark:bg-neutral-900 dark:text-white"}>
+          <Menu.Items className={"w-60 border rounded-lg shadow-lg bg-white"}>
             <Menu.Item>
               <Link
                 className="group flex items-center gap-4 px-6 pt-8 pb-4 rounded-t-lg"
@@ -51,7 +51,7 @@ export default function NavigationMenu() {
                   size={24}
                 />
                 <p className="font-bold text-xl transition-colors group-hover:text-gray-500">
-                  About Me
+                  About
                 </p>
               </Link>
             </Menu.Item>
