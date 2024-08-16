@@ -56,6 +56,11 @@ export default function Skills() {
               imageSource="/images/skills/c.png"
               link="https://en.wikipedia.org/wiki/C_(programming_language)"
             />
+            <SkillPane
+              name="C++"
+              imageSource="/images/skills/cpp.png"
+              link="hhttps://en.wikipedia.org/wiki/C%2B%2B"
+            />
           </div>
         </div>
         <div className="m-12">
@@ -95,6 +100,11 @@ export default function Skills() {
               name="ASP.NET"
               imageSource="/images/skills/aspnet.png"
               link="https://dotnet.microsoft.com/en-us/apps/aspnet"
+            />
+            <SkillPane
+              name="Spring Boot"
+              imageSource="/images/skills/springboot.png"
+              link="https://spring.io/projects/spring-boot"
             />
           </div>
         </div>
