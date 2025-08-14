@@ -20,21 +20,13 @@ export default function About() {
         <div className="flex flex-col gap-12 max-w-4xl my-4">
           <h1 className="text-6xl text-center font-bold">About</h1>
           <p>
-            I&apos;m a junior at the University of Texas at Austin, majoring in
+            I&apos;m a senior at the University of Texas at Austin, majoring in
             Computer Science. My passion lies in building things with
             code—whether it&apos;s diving into the latest tech stack or
             framework, or tinkering on a side project, I find pure satisfaction
             in the art of creation. The blend of coding, mathematics, and
             finance fascinates me, and I aspire to channel this enthusiasm into
-            a career as a quant trader or software engineer after college.
-          </p>
-          <p>
-            Beyond the classroom, I&apos;m actively involved in Texas
-            Convergent, an organization at UT where I collaborate with a
-            talented team to develop custom software solutions for small
-            businesses and nonprofits in the Austin area. It&apos;s an
-            incredibly rewarding experience to use technology to make a real
-            difference in the community.
+            a career as a quantitative developer or software engineer after college.
           </p>
           <p>
             When I&apos;m not coding or working on a project, you&apos;ll likely

@@ -9,6 +9,23 @@ export default function Experience() {
       <main className="flex flex-col items-center justify-around min-h-screen md:ml-[20rem] p-8">
         <h1 className="text-6xl text-center font-bold m-16">Experience</h1>
         <ExperiencePane
+          company="MarketAxess"
+          location="New York, NY"
+          title="Trading Systems Intern"
+          dates="June 2025 – August 2025"
+          skills={[
+            ["Java", "java.png"],
+            ["Apache Kafka", "kafka.png"],
+            ["TIBCO Rendezvous", "tibco.png"],
+          ]}
+          description={[
+            "Designed and delivered a high-throughput, low-latency, enterprise-grade application bridging TIBCO Rendezvous with Apache Kafka, utilizing guaranteed delivery and persistent message replay for intra-day recovery of messages",
+            "Engineered system to handle over 2,000 FIX messages per second and scale up to over 20 million messages per day",
+            "Built a resilient hot-hot architecture with full-load capable instances for seamless, robust failover with no downtime",
+            "Contributed production-ready features and bug fixes to core trading system, boosting robustness and performance",
+          ]}
+        />
+        <ExperiencePane
           company="Visa"
           location="Austin, TX"
           title="Software Engineering Intern"
