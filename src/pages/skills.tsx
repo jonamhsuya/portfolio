@@ -111,10 +111,20 @@ export default function Skills() {
         <div className="m-12">
           <h2 className="text-2xl text-center font-bold mb-6">Backend</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
-          <SkillPane
+            <SkillPane
               name="SQL Server"
               imageSource="/images/skills/sqlserver.png"
               link="https://www.postgresql.org/"
+            />
+            <SkillPane
+              name="Apache Kafka"
+              imageSource="/images/skills/kafka.png"
+              link="https://kafka.apache.org/"
+            />
+            <SkillPane
+              name="TIBCO Rendezvous"
+              imageSource="/images/skills/tibco.png"
+              link="https://docs.tibco.com/products/tibco-rendezvous"
             />
             <SkillPane
               name="PostgreSQL"
