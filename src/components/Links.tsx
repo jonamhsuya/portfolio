@@ -37,7 +37,7 @@ export default function Links() {
           <IconBrandInstagram />
         </a>
       </div>
-      <p className="mx-auto">© 2024 Ayush Manoj.</p>
+      <p className="mx-auto">© 2025 Ayush Manoj.</p>
     </div>
   );
 }
