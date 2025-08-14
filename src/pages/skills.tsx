@@ -39,7 +39,7 @@ export default function Skills() {
             <SkillPane
               name="C++"
               imageSource="/images/skills/cpp.png"
-              link="hhttps://en.wikipedia.org/wiki/C%2B%2B"
+              link="https://en.wikipedia.org/wiki/C%2B%2B"
             />
             <SkillPane
               name="HTML"
