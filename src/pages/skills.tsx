@@ -32,6 +32,16 @@ export default function Skills() {
               link="https://www.typescriptlang.org/"
             />
             <SkillPane
+              name="C"
+              imageSource="/images/skills/c.png"
+              link="https://en.wikipedia.org/wiki/C_(programming_language)"
+            />
+            <SkillPane
+              name="C++"
+              imageSource="/images/skills/cpp.png"
+              link="hhttps://en.wikipedia.org/wiki/C%2B%2B"
+            />
+            <SkillPane
               name="HTML"
               imageSource="/images/skills/html.png"
               link="https://developer.mozilla.org/en-US/docs/Web/HTML"
@@ -50,16 +60,6 @@ export default function Skills() {
               name="SQL"
               imageSource="/images/skills/sql.png"
               link="https://en.wikipedia.org/wiki/SQL"
-            />
-            <SkillPane
-              name="C"
-              imageSource="/images/skills/c.png"
-              link="https://en.wikipedia.org/wiki/C_(programming_language)"
-            />
-            <SkillPane
-              name="C++"
-              imageSource="/images/skills/cpp.png"
-              link="hhttps://en.wikipedia.org/wiki/C%2B%2B"
             />
           </div>
         </div>
