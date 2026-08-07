@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 import Links from "@/components/Links";
+import MarketStatus from "@/components/MarketStatus";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 
 const NAME = "Ayush Manoj";
@@ -17,15 +19,26 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
         >
-          <p className="font-bold text-6xl md:text-7xl lg:text-8xl">
-            {NAME}
-          </p>
+          {prefersReducedMotion ? (
+            <p className="font-bold text-6xl md:text-7xl lg:text-8xl">
+              {NAME}
+            </p>
+          ) : (
+            <TypeAnimation
+              wrapper="p"
+              className="name-typed font-bold text-6xl md:text-7xl lg:text-8xl"
+              speed={{ type: "keyStrokeDelayInMs", value: 130 }}
+              sequence={[NAME, 2200, (el) => el?.classList.add("done")]}
+              repeat={0}
+              cursor
+            />
+          )}
         </motion.div>
         <motion.div
           className="relative z-10 max-w-xl"
           initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
+          transition={{ duration: 0.6, delay: 1.5 }}
         >
           <p className="font-bold text-3xl mb-4">SWE @ Bloomberg</p>
           <p className="text-xl text-muted">
@@ -39,9 +52,17 @@ export default function Home() {
           className="relative z-10"
           initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.05 }}
+          transition={{ duration: 0.6, delay: 1.65 }}
         >
           <Links />
+        </motion.div>
+        <motion.div
+          className="relative z-10"
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.8 }}
+        >
+          <MarketStatus />
         </motion.div>
       </main>
     </>
