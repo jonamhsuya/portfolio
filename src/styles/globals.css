@@ -9,63 +9,14 @@
 }
 
 @layer components {
-  .hover-pop {
-    @apply transition-transform duration-200 hover:scale-105;
-  }
   .mono-label {
     @apply text-xs uppercase tracking-widest text-muted font-mono;
   }
 }
 
 body {
-  @apply bg-background text-foreground;
+  @apply bg-background text-foreground font-mono;
   color-scheme: dark;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background-image: repeating-linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.025) 0px,
-    rgba(255, 255, 255, 0.025) 1px,
-    transparent 1px,
-    transparent 3px
-  );
-}
-
-/* react-type-animation renders its blinking cursor as a `::after` on the
-   wrapper element. Once typing settles (see the `done` class toggled from
-   the sequence callback in index.tsx), fade it out in place rather than
-   removing it, so the name's width — and therefore its centering — never
-   changes. Higher specificity than the library's own rule lets this win
-   regardless of stylesheet order. */
-.name-typed {
-  position: relative;
-}
-
-/* Absolutely positioned so the cursor's width never factors into the
-   name's box — the name is centered purely on its own text, regardless of
-   whether the cursor is visible, mid-blink, or already faded out. */
-.name-typed::after {
-  position: absolute;
-  left: 100%;
-  bottom: 0.08em;
-  display: inline-block;
-  margin-left: 0.15em;
-  color: theme("colors.accent.DEFAULT");
-  transform: scaleY(1.15);
-  transform-origin: bottom;
-  transition: opacity 0.4s ease-out;
-}
-
-.name-typed.done::after {
-  opacity: 0;
-  animation: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -76,4 +27,200 @@ body::before {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* ---------- ticker masthead ---------- */
+.a-marquee-wrap {
+  flex: none;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid theme("colors.border");
+  background: theme("colors.surface");
+  padding: 0.4rem 0;
+}
+
+.a-marquee-track {
+  display: flex;
+  width: max-content;
+  color: theme("colors.accent.DEFAULT");
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  animation: a-scroll 12s linear infinite;
+  animation-play-state: paused;
+  --a-marquee-distance: 0px;
+}
+.a-marquee-track.ready {
+  animation-play-state: running;
+}
+.a-marquee-set {
+  display: flex;
+  flex-shrink: 0;
+}
+@keyframes a-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--a-marquee-distance));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .a-marquee-track {
+    animation: none;
+  }
+}
+.a-marquee-set span {
+  margin-right: 3rem;
+  white-space: nowrap;
+}
+.a-marquee-set .up {
+  color: theme("colors.positive");
+}
+.a-marquee-set .down {
+  color: theme("colors.negative");
+}
+.a-marquee-set .clock {
+  color: theme("colors.foreground");
+}
+
+/* ---------- hero shell ---------- */
+/* Everything below the ticker centers in whatever space is left, so the
+   shell sits between the ticker and the bottom of the viewport rather than
+   hugging the top. Scrolls instead of clipping if content ever outgrows it. */
+.a-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.a-shell {
+  max-width: 46rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.a-name {
+  font-size: clamp(2rem, 7vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: theme("colors.foreground");
+  margin: 0 0 0.15rem;
+  text-wrap: balance;
+}
+.a-role {
+  color: theme("colors.positive");
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 1.75rem;
+}
+
+.a-fields {
+  border-top: 1px solid theme("colors.border");
+  border-bottom: 1px solid theme("colors.border");
+  margin-bottom: 1.75rem;
+}
+.a-field {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid theme("colors.border");
+  font-size: 0.85rem;
+}
+.a-field:first-child {
+  border-top: none;
+}
+.a-field dt {
+  color: theme("colors.accent.muted");
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding-top: 0.15rem;
+}
+.a-field dd {
+  margin: 0;
+  line-height: 1.6;
+  color: theme("colors.foreground");
+}
+/* Stack label above value on narrow screens rather than cramming the
+   Focus paragraph into a sliver of remaining width next to a fixed label
+   column. */
+@media (max-width: 30rem) {
+  .a-field {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .a-field dt {
+    padding-top: 0;
+  }
+}
+
+.a-section-label {
+  color: theme("colors.accent.muted");
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+
+.a-keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.25rem;
+}
+.a-key {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid theme("colors.accent.muted");
+  border-radius: 3px;
+  color: theme("colors.foreground");
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.a-key:hover,
+.a-key:focus-visible {
+  border-color: theme("colors.accent.DEFAULT");
+  background: theme("colors.surface");
+  color: theme("colors.accent.DEFAULT");
+}
+.a-key:focus-visible {
+  outline: 2px solid theme("colors.accent.DEFAULT");
+  outline-offset: 2px;
+}
+
+.a-status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-top: 1px solid theme("colors.border");
+  border-bottom: 1px solid theme("colors.border");
+  padding: 1.25rem 0;
+  font-size: 0.8rem;
+}
+.a-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: theme("colors.positive");
+  flex: none;
+}
+.a-dot.closed {
+  background: theme("colors.negative");
+}
+.a-status .exch {
+  color: theme("colors.accent.DEFAULT");
+  letter-spacing: 0.08em;
+}
+.a-status .sep {
+  color: theme("colors.border");
 }

@@ -7,18 +7,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0e14",
-        surface: "#11151c",
-        foreground: "#e6e6e6",
-        muted: "#7a8494",
-        border: "#232833",
+        background: "#050400",
+        surface: "#0b0a05",
+        foreground: "#eae6d8",
+        muted: "#8a5c00",
+        border: "#332c17",
         accent: {
-          DEFAULT: "#7ee787",
-          muted: "#3fa34d",
+          DEFAULT: "#ffb000",
+          muted: "#8a5c00",
         },
+        positive: "#3ddc55",
+        negative: "#ff5b4d",
       },
       fontFamily: {
-        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
+        // Deliberately not a loaded webfont: this matches the approved
+        // prototype, which listed "JetBrains Mono" but never actually
+        // loaded it, so what was approved is really each OS's own
+        // monospace fallback (SF Mono/Menlo on macOS, Consolas on Windows).
+        mono: [
+          "JetBrains Mono",
+          "IBM Plex Mono",
+          "ui-monospace",
+          "SF Mono",
+          "Menlo",
+          "Consolas",
+          "monospace",
+        ],
       },
     },
   },
