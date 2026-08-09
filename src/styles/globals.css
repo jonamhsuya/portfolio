@@ -172,7 +172,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-bottom: 2.25rem;
 }
 .a-key {
   display: flex;
@@ -196,31 +195,4 @@ body {
 .a-key:focus-visible {
   outline: 2px solid theme("colors.accent.DEFAULT");
   outline-offset: 2px;
-}
-
-.a-status {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  border-top: 1px solid theme("colors.border");
-  border-bottom: 1px solid theme("colors.border");
-  padding: 1.25rem 0;
-  font-size: 0.8rem;
-}
-.a-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: theme("colors.positive");
-  flex: none;
-}
-.a-dot.closed {
-  background: theme("colors.negative");
-}
-.a-status .exch {
-  color: theme("colors.accent.DEFAULT");
-  letter-spacing: 0.08em;
-}
-.a-status .sep {
-  color: theme("colors.border");
 }

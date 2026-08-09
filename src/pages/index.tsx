@@ -1,5 +1,4 @@
 import Links from "@/components/Links";
-import MarketStatus from "@/components/MarketStatus";
 import Ticker from "@/components/Ticker";
 
 export default function Home() {
@@ -36,8 +35,6 @@ export default function Home() {
 
             <p className="a-section-label">Contact functions</p>
             <Links />
-
-            <MarketStatus />
           </div>
         </div>
       </main>
