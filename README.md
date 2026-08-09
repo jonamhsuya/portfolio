@@ -1,14 +1,16 @@
 # Portfolio
 
-Source for my personal site — a single-page hero focused on contact info and
-a short statement on what I do, styled as a dark, terminal-inspired page.
+Source for my personal site — a single-page hero styled as a financial-terminal
+instrument: a continuously scrolling ticker, tabular data fields, and
+keycap-style contact links, on a dark amber/green/red palette.
 
 ## Stack
 
 - **Next.js** (Pages Router) + **TypeScript**
 - **Tailwind CSS** for styling
-- **Framer Motion** for entrance animations
-- **react-type-animation** for the terminal-style typing effect
+- No animation libraries — the ticker's scroll/loop logic is plain DOM
+  measurement in a small React component (`Ticker.tsx`), and everything
+  respects `prefers-reduced-motion`.
 
 ## Development
 
