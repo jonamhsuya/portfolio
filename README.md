@@ -8,9 +8,6 @@ keycap-style contact links, on a dark amber/green/red palette.
 
 - **Next.js** (Pages Router) + **TypeScript**
 - **Tailwind CSS** for styling
-- No animation libraries — the ticker's scroll/loop logic is plain DOM
-  measurement in a small React component (`Ticker.tsx`), and everything
-  respects `prefers-reduced-motion`.
 
 ## Development
 
