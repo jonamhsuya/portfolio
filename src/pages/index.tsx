@@ -24,7 +24,7 @@ export default function Home() {
               <div className="a-field">
                 <dt>Focus</dt>
                 <dd>
-                  I&#39;ve followed markets obsessively for years — not as an
+                  I&#39;ve followed markets for years — not as an
                   abstraction, but as a live scoreboard for the real world.
                   Building the software behind that scoreboard, where being
                   slow or wrong meaningfully changes the score, is what pulls
