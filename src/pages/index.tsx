@@ -1,71 +1,45 @@
-import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 import Links from "@/components/Links";
 import MarketStatus from "@/components/MarketStatus";
-import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
-
-const NAME = "Ayush Manoj";
+import Ticker from "@/components/Ticker";
 
 export default function Home() {
-  const prefersReducedMotion = usePrefersReducedMotion();
-
   return (
     <>
       <title>Ayush Manoj</title>
-      <main className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-6 p-6 text-center sm:p-12">
-        <motion.div
-          className="relative z-10"
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          {prefersReducedMotion ? (
-            <p className="font-bold whitespace-nowrap text-[clamp(2rem,11vw,3.75rem)] sm:text-6xl md:text-7xl lg:text-8xl">
-              {NAME}
-            </p>
-          ) : (
-            <TypeAnimation
-              wrapper="p"
-              className="name-typed font-bold whitespace-nowrap text-[clamp(2rem,11vw,3.75rem)] sm:text-6xl md:text-7xl lg:text-8xl"
-              speed={{ type: "keyStrokeDelayInMs", value: 130 }}
-              sequence={[NAME, 2200, (el) => el?.classList.add("done")]}
-              repeat={0}
-              cursor
-            />
-          )}
-        </motion.div>
-        <motion.div
-          className="relative z-10 max-w-xl"
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.5 }}
-        >
-          <p className="font-bold text-[clamp(1.25rem,6vw,1.875rem)] mb-4 sm:text-3xl">
-            SWE @ Bloomberg
-          </p>
-          <p className="text-[clamp(0.95rem,4vw,1.25rem)] text-muted sm:text-xl">
-            I&#39;ve followed markets obsessively for years—not as an
-            abstraction, but as a live scoreboard for the real world.
-            Building the software behind that scoreboard, where being slow
-            or wrong meaningfully changes the score, is what pulls me in.
-          </p>
-        </motion.div>
-        <motion.div
-          className="relative z-10"
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.65 }}
-        >
-          <Links />
-        </motion.div>
-        <motion.div
-          className="relative z-10"
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.8 }}
-        >
-          <MarketStatus />
-        </motion.div>
+      <main className="relative z-10 flex min-h-screen flex-col">
+        <Ticker />
+        <div className="a-center">
+          <div className="a-shell">
+            <h1 className="a-name">Ayush Manoj</h1>
+            <p className="a-role">SWE @ Bloomberg</p>
+
+            <dl className="a-fields">
+              <div className="a-field">
+                <dt>Role</dt>
+                <dd>Software Engineer</dd>
+              </div>
+              <div className="a-field">
+                <dt>Company</dt>
+                <dd>Bloomberg</dd>
+              </div>
+              <div className="a-field">
+                <dt>Focus</dt>
+                <dd>
+                  I&#39;ve followed markets obsessively for years — not as an
+                  abstraction, but as a live scoreboard for the real world.
+                  Building the software behind that scoreboard, where being
+                  slow or wrong meaningfully changes the score, is what pulls
+                  me in.
+                </dd>
+              </div>
+            </dl>
+
+            <p className="a-section-label">Contact functions</p>
+            <Links />
+
+            <MarketStatus />
+          </div>
+        </div>
       </main>
     </>
   );

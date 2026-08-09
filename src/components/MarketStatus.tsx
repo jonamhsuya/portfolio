@@ -26,20 +26,12 @@ export default function MarketStatus() {
     return () => clearInterval(id);
   }, []);
 
-  if (open === null) {
-    return null;
-  }
-
   return (
-    <p className="mono-label text-sm flex items-center justify-center gap-2">
-      <span
-        className={`h-2 w-2 rounded-full ${
-          open
-            ? "bg-accent shadow-[0_0_6px_2px_rgba(126,231,135,0.6)]"
-            : "bg-rose-500 shadow-[0_0_6px_2px_rgba(244,63,94,0.6)]"
-        }`}
-      />
-      MARKETS {open ? "OPEN" : "CLOSED"}
-    </p>
+    <div className="a-status">
+      <span className={`a-dot${open ? "" : " closed"}`} />
+      <span className="exch">NYSE</span>
+      <span className="sep">|</span>
+      <span>{open === null ? "Checking session…" : open ? "OPEN" : "CLOSED"}</span>
+    </div>
   );
 }
