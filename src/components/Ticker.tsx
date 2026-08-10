@@ -25,7 +25,11 @@ export default function Ticker() {
       const unit = track.querySelector<HTMLElement>(".a-marquee-set");
       if (!unit) return;
 
-      const unitWidth = unit.getBoundingClientRect().width;
+      // Rounded to a whole pixel: an unrounded fractional distance (e.g.
+      // 623.734375px) can end up a hair off from how the browser actually
+      // snaps/rasterizes the cloned copies, leaving a ~1px seam that
+      // flashes right at the loop reset every cycle.
+      const unitWidth = Math.round(unit.getBoundingClientRect().width);
       const wrapWidth = wrap.getBoundingClientRect().width;
       if (!unitWidth || !wrapWidth) return; // not laid out yet
 

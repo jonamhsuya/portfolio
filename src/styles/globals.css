@@ -48,6 +48,12 @@ body {
   animation: a-scroll 12s linear infinite;
   animation-play-state: paused;
   --a-marquee-distance: 0px;
+  /* Keeps the track on its own GPU-composited layer for the whole
+     animation, so the browser slides an already-rasterized bitmap
+     instead of re-rasterizing the text right at the loop reset — that
+     re-rasterization is what reads as a brief blink each cycle. */
+  will-change: transform;
+  backface-visibility: hidden;
 }
 .a-marquee-track.ready {
   animation-play-state: running;
